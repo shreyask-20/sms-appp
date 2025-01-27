@@ -1,0 +1,111 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Background Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels */
+label {
+    margin-top: 10px;
+    font-weight: 500;
+    align-self: flex-start;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Input Fields */
+input, textarea {
+    margin-top: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    width: 90%; /* Fixes form overflowing */
+}
+
+/* Prevent Text Fields from Expanding */
+input, textarea {
+    max-width: 300px;
+}
+
+/* Placeholder Text */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #ff4b2b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+button:hover {
+    background: #ff3a1b;
+    transform: scale(1.05);
+}
+
+/* Response Message */
+/* Response Message */
+p {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white; /* Default color */
+}
+
+.success-message {
+  color: #28a745; /* Light green color for success */
+}
+
+.error-message {
+  color: #e74c3c; /* Red color for errors */
+}
+
